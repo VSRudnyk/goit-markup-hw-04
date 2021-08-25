@@ -325,42 +325,42 @@ img {
   background-color: var(--btn-bg-color);
 }
 .network {
-  margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
 }
 .network-list {
   display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.network-icon {
-  fill: var(--icon-network-color);
+  padding: 0;
+  margin: 0;
+  list-style: none;
 }
 
-.network-item {
-  width: 44px;
-  height: 44px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.network-item:hover,
-.network-item:focus {
-  background-color: var(--icon-network-bg-color);
-  border-radius: 50%;
-}
-.network-icon:hover,
-.network-icon:focus {
-  fill: var(--white-text-color);
-}
-.network-list .network-item + .network-item {
+.network-item + .network-item {
   margin-left: 10px;
 }
+
 .network-link {
   display: flex;
-  height: 44px;
-  width: 44px;
   justify-content: center;
   align-items: center;
+  width: 44px;
+  height: 44px;
+  color: var(--icon-network-color);
+}
+
+.network-link:hover {
+  color: #fff;
+  border-radius: 50%;
+  background-color: var(--accent-color);
+}
+
+.network-icon {
+  fill: currentColor;
+}
+
+
+
 }
 /*--------------------- Clients ------------------------------*/
 .section.client {
@@ -370,29 +370,27 @@ img {
   display: flex;
   justify-content: center;
 }
-.client-item {
+.client-link {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 170px;
   height: 92px;
+  color: var(--icon-network-color);
   border: 1px solid var(--icon-network-color);
   border-radius: 4px;
 }
-.client-item + .client-item {
-  margin-left: 30px;
+.client-item:not(:last-child) {
+  margin-right: 30px;
 }
-.client-item:hover,
-.client-item:focus {
+.client-link:hover,
+.client-link:focus {
+  color: var(--accent-color);
   border-color: var(--accent-color);
 }
-.client-icon {
-  fill: var(--icon-network-color);
-}
 
-.client-icon:hover,
-.client-icon:focus {
-  fill: var(--accent-color);
+.client-icon {
+  fill: currentColor;
 }
 /* --------------------- Footer -----------------------------*/
 
