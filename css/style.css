@@ -325,9 +325,9 @@ img {
   background-color: var(--btn-bg-color);
 }
 .network {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
 }
 .network-list {
   display: flex;
@@ -359,9 +359,6 @@ img {
   fill: currentColor;
 }
 
-
-
-}
 /*--------------------- Clients ------------------------------*/
 .section.client {
   padding-top: 123px;
@@ -456,10 +453,15 @@ img {
   padding: 72px 0 100px 0;
   margin-left: 70px;
 }
+
 .social-list {
+  list-style: none;
   display: flex;
+  margin: 0;
+  padding: 0;
 }
-.social-item {
+
+.social-link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -468,16 +470,17 @@ img {
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.1);
 }
+
 .social-item + .social-item {
   margin-left: 10px;
 }
+
 .social-logo {
-  fill: #fff;
+  fill: var(--white-text-color);
 }
 
-.social-item:hover,
-.social-item:focus {
-  border-radius: 50%;
+.social-link:hover,
+.social-link:focus {
   background-color: var(--accent-color);
 }
 
