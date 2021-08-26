@@ -349,7 +349,8 @@ img {
   color: var(--icon-network-color);
 }
 
-.network-link:hover {
+.network-link:hover,
+.network-link:focus {
   color: #fff;
   border-radius: 50%;
   background-color: var(--accent-color);
